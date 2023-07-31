@@ -1,0 +1,71 @@
+<DOCTYPE html>
+<html>
+      <head>
+	        <title>Formularia HTML Gratuita</title>
+			 <meta charset="UTF_8">
+		</head>
+		<h1>Formulário HTML</h1>
+		<p>O formulário HTML é um formulário de preenchimento de dados ou que resulta em uma ação desejada utilizando a linguagem de marcação HTML. É 
+		formado por um ou mais widgets. Esses widgets são campos de textos, caixas de seleção, botões, radio buttons e checkboxes utilizando ferramentas 
+		do próprio HTML. Dessa forma, o usuário pode interagir com a página ao executar ações através desses formulários.
+        Esse recurso é muito utilizado para a criação de formulários de contato, formulários para captura de leads, e também para criação de sistemas, como 
+		por exemplo a criação de um modal de login.</p>
+		<h4>Como inserir um formulário HTML</h4>
+		<li>O formulário HTML é representado pela tag de abertura < form > e a de fechamento < /form >. Dentro dessas tags, serão colocados todos os elementos
+		que compõem este formulário. Posteriormente, vamos explicar melhor como incluir esses elementos.</li>
+		<li>Para a tag < form > podem ser atribuídos o atributo method e o atributo action.</li>
+        <li>O atributo action define o local (através de uma URL) ao qual serão enviados todos os dados recolhidos do formulário.</li>
+        <li>O atributo method define o método HTTP com que o formulário HTML irá lidar com os dados recebidos. São eles: o método GET e o método POST.
+		Posteriormente vamos entender melhor como funcionam esses dois métodos.</li>
+       
+         <p>< !--Formulário HTML através do método POST-- ></p>
+         <p>< form method="post" action="/receber_dados.php" ></p>
+         <p>< /form ></p>
+         <p>< !--Formulário HTML através do método GET -- ></p>
+         <p>< form method="get" action="/receber_dados.php" > </p>
+         <p>< /form ></p>
+		
+		<h4>O input do tipo “number” define um campo para inserir um número.</h4>
+		<form>
+    Quantidade (entre 1 e 5): <input type="number" name="quantidade" min="1" max="5">    
+      </form>
+	  
+	     <h4>O input do tipo “password” define um campo para digitação de senha.</h4>
+		 <form>
+    <input type="password" name="senha" placeholder="Digite sua Senha">
+          </form>
+		  
+		  <h4>O input do tipo “range” define um controle equivalente a um controle deslizante. O intervalo padrão é de 0 a 100. </h4>
+		  <form>
+    Defina seu nível de satisfação:<br>
+    pouco satisfeito
+    <input type="range" name="satisfacao" min="0" max="10">
+    muito satisfeito
+     </form>
+	 
+	 <h2>Entradas HTML</h2>
+	 <form>
+Primeiro nome: 
+<input type="text" name="firstname">
+<br>
+Último nome: 
+<input type="text" name="lastname">
+</form>
+<form>
+<input type="radio" name="sex" value="male"> Masculino
+<br>
+<input type="radio" name="sex" value="female"> Feminino
+</form>
+<form>
+<input type="checkbox" name="bike">
+Eu tenho uma bicicleta
+<br>
+<input type="checkbox" name="car">
+Eu tenho um carro
+</form>
+<form name="input" action="html_form_action.asp"
+method="get">
+Nome do Usuário: 
+<input type="text" name="user">
+<input type="submit" value="Enviar">
+</form>
